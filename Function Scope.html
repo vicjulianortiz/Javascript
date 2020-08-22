@@ -1,0 +1,19 @@
+<html>
+	<head><title>Function Scope</title>
+		<script type = "text/javascript">
+			var name = "William";
+			var hometown = "Chico";
+			function greetme(){
+				var name = "Daniel";
+				var hometwon = "Husingen";
+				alert("In function the name is " + name + " and hometown is " + hometown);
+			}
+		</script>
+	</head>
+	<body>
+		<script type = "text/javascript">
+			greetme();
+			alert("Out of function, name is " + name + " and hometown is " + hometown);
+		</script>
+	</body>
+</html>

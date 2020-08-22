@@ -1,0 +1,24 @@
+<html>
+	<head><title>Functions as Variable</title>
+		<script type = "text/javascript">
+			var greetings = function(visitor){
+				message = "Greetings to you!" + visitor + "! ";
+				return message;
+			}
+		</script>
+	</head>
+	<body>
+		<big>
+		<script type = "text/javascript">
+			var salutation = greetings("Elife");
+			document.write(salutation + "<br />");
+			var hello = greetings;
+
+			var welcome = greetings;
+			document.write(hello("Stranger") + "<br />");
+
+			document.write(welcome("Your Majesty") + "May I take your coat? <br />");
+		</script>
+		</big>
+	</body>
+</html>
