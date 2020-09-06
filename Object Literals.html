@@ -1,0 +1,35 @@
+<html>
+	<head><title>Object Literals</title>
+		<script type = "text/javascript">
+			var Car = {
+				make: undefined,
+				year: 2006,
+				price: undefined,
+				owner:{
+						name:"Henry Lee",
+						cell_phone: "222-222-2222",
+						address:(street: "10 Main",
+								city: "SF",
+								state: "CA"
+						}
+				},
+				dealer: "Sf Honda",
+				display: function() {details="Make: "+Car.make+"\n";
+									 details += "Year:+"\n";
+									 details += "Price: $"+Car.price+"\n";
+									 details += "Owner: "+
+									 			Car.owner.name+"\n";
+									 alert(details);
+		</script>
+	</head>
+	<body>
+		<big>
+		<script type = "text/javascript">
+			Car.make ="Honda Civic";
+			Car.year = 2009;
+			Car.price = 30000;
+			Car.display();
+		</script>
+		</big>
+	</body>
+</html>
